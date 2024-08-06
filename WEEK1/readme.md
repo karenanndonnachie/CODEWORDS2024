@@ -1,4 +1,5 @@
 # Hello World! experiments
+This week we learned the basics of html structure, some basic tags and some basic styling.
 ## Two different basic pages showing various tags and styles
 ### #1 rendered page 'STACKED DIVS'
 <body>
