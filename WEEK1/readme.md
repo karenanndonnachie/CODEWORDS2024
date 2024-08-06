@@ -47,3 +47,5 @@ This week we learned the basics of html structure, some basic tags and some basi
 <h1>Hello <img src="handfork_01.jpg" height="40" /> World!</h1>
 </div>
 </body>
+</html>
+````
