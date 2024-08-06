@@ -1,7 +1,7 @@
 # Hello World! experiments
 This week we learned the basics of html structure, some basic tags and some basic styling.
 ## Two different basic pages showing various tags and styles
-### #1 rendered page 'STACKED DIVS'
+### #1 rendered page '[STACKED DIVS](https://karenanndonnachie.github.io/CODEWORDS2024/WEEK1/)'
 <body>
 <div align="center">
 <img src="handfork_01.jpg" width="300" />
@@ -26,7 +26,7 @@ This week we learned the basics of html structure, some basic tags and some basi
 </body>
 </html>
 ````
-### #2 rendered page 'INLINE IMAGE'
+### #2 rendered page '[INLINE IMAGE](https://karenanndonnachie.github.io/CODEWORDS2024/WEEK1/inline.html)'
 <body>
 <div align="center">
 <h1>Hello <img src="handfork_01.jpg" height="40" /> World!</h1>
