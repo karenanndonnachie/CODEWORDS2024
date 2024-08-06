@@ -9,7 +9,8 @@
 </body>
 
 ### #1 html code
-````<!DOCTYPE html>
+````
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -32,7 +33,8 @@
 </body>
 
 ### #2 html code
-````<!DOCTYPE html>
+````
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
