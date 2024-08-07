@@ -2,7 +2,7 @@
 ## RMIT STUDIO 2024 ANDY SIMIONATO &amp; KAREN ANN DONNACHIE
 Melbourne, Australia
 * [Go to Week 1](/WEEK1)
-* [CSS resources](/CSS)
+* [CSS resources](/CSS_TRICKS_TIPS)
 _____________________________________
 ## <strong>Github FAQ</strong>
 
