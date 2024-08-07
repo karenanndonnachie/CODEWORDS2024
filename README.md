@@ -1,7 +1,8 @@
 # CODEWORDS2024
 ## RMIT STUDIO 2024 ANDY SIMIONATO &amp; KAREN ANN DONNACHIE
 Melbourne, Australia
-
+* [Go to Week 1](/WEEK1)
+* [CSS resources](/CSS)
 _____________________________________
 ## <strong>Github FAQ</strong>
 
