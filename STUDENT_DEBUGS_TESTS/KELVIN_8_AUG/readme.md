@@ -9,6 +9,7 @@
 * Use the `View/developer/developer tools` tab in chrome to locally test and edit your html file in a non-destructive way... you can also edit and test other web sites you find, or just nosey around inside them to see what fonts and styling they are using!
 * Use Visual studio code extensions to colour / check your CSS & HTML ... if it's red then it probably is an error or sorts!
 * Positioning and changing size of svg...
+  * A lot of the time for primitive shapes (rectangles, circles, squares, triangles etc.) you can just use [CSS Shapes](https://www.w3schools.com/howto/howto_css_shapes.asp#gsc.tab=0) test out the 'TRY ME' editor for examples.
   * if you are using an svg file you can size the svg the same way as you would an img.
   * If you are placing svg inline (inside `<svg>` tag) then the size & position of the `<svg>` is determined by the size of the shapes inside the `<svg>` and the `<svg>` attributes are for the "container" of the shapes, so you can 'clip' or crop' but you are not changing the size of the element, just it's 'viewbox'
   * If you want the shape inside to FILL the viewbox dimensions set in your svg tag, then use % eg. your width/height of your `<rect>` element need to be 100%
@@ -18,9 +19,11 @@
   * See more [here](https://www.w3schools.com/graphics/svg_rect.asp) (use the "Try Me" editor)
 * close your `<html>` at the end of you file with `</html>`
 
+For the question of 'repeating and randomising' positions & elements, you would need to do that either with a series of nested classes/styles (eg. parent/child elements), or you could use iframes, or you could use a canvas, &/or you can add and remove any number of divs with javascript, but I would suggest you get HTML & CSS sorted first.
+
 ## Have fun and give everything time!
 
-here is a video of the walkthrough of the points above:
+Bring all your questions to class, and prepare contingencies - a good strategy is to build up simpler pages first, then tackle one problem at a time... you can 'save as..' a second version and then a third and so on. The documentation of this 'progression' can work great as an animated gif, too, if you take screenshots along the way.
 
 
   
