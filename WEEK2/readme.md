@@ -38,11 +38,7 @@ eg. `<div style="text-align:left;">` OR `<div class="lefttext">` + `.lefttext{ t
 
 4. You can also look at using columns and grids to make stronger gridded designs see [CSS GRIDS](https://www.w3schools.com/css/css_grid.asp)
 
-5. Use the `View/developer/developer tools` tab in chrome to locally test and edit your html file in a non-destructive way... you can also edit and test other web sites you find, or just nosey around inside them to see what fonts and styling they are using!
-
-6. Use Visual studio code extensions to colour / check your CSS & HTML ... if it's red then it probably is an error or sorts!
-
-7. Positioning and changing size of svg...
+5. Positioning and changing size of svg...
   * A lot of the time for primitive shapes (rectangles, circles, squares, triangles etc.) you can just use [CSS Shapes](https://www.w3schools.com/howto/howto_css_shapes.asp#gsc.tab=0) test out the 'TRY ME' editor for examples.
   * if you are using an svg file you can size the svg the same way as you would an img.
   * If you are placing svg inline (inside `<svg>` tag) then the size & position of the `<svg>` is determined by the size of the shapes inside the `<svg>` and the `<svg>` attributes are for the "container" of the shapes, so you can 'clip' or crop' but you are not changing the size of the element, just it's 'viewbox'
@@ -54,4 +50,20 @@ eg. `<div style="text-align:left;">` OR `<div class="lefttext">` + `.lefttext{ t
       ```
   * attributes can be set with a class or `<svg style="position:absolute; top:0; left:0; width:5vw; height:20vh>` 
   * See more [here](https://www.w3schools.com/graphics/svg_rect.asp) (use the "Try Me" editor)
-   
+
+# TAMING YOUR TOOLS
+## Localised web-page editing 'INSPECTOR PANEL"
+You can Edit, re-work and break live code with no consequence with the <br/>`WEB DEVELOPER TOOLS INSPECTOR PANEL`<br/>
+**Keyboard shortcut to open inspector panel IN YOUR BROWSER:**<br/>
+**CMD + SHIFT + C**<br/>
+When you are in dev tools, you can adjust (temporarily) your css values until you are happy then you can copy/paste to your style sheet in vs code.
+<br/>**NOTE** You can do this TO ANY PAGE ON THE INTERNET!!
+
+## Visual Studio Code code hints
+* Turn on HTML Preview to see the page side-by-side (WYSYWIG)
+You can fix a lot of your code before it hits any server (local or otherwise) by paying attention to what is written inside the editor.. <br/>
+Coloured code hinting is more evident in `dark mode` (you can change your theme)
+<br/> eg. If the code is written in red it is liklely that VScode is indicating an error in style or format or syntax.
+<br/>
+VSCode also shows error in the frame around you code, take the time to familiarise yourself with the error/problem pane.
+
