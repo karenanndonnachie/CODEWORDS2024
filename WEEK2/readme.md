@@ -12,7 +12,18 @@ Revising the essential building blocks of html...
    * `<img />`
    * `<h1></h1>`
    * etc.
-
+* `<html>` the outermost container for all other HTML elements
+* `<head>` a container for metadata. Metadata typically define the document title, character set, styles, scripts, and other meta information.
+* `<body>` defines the document's body. Contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc. There can only be one <body> element in an HTML document.
+* `<title>` defines the document title and the title in the browser toolbar, and is required in all HTML documents.
+* `<section>` defines a section in a document.
+* `<div>` defines a division in an HTML document. Any content can be put inside a <div> tag.
+* `<img>` used to embed an image onto an HTML page.
+* `<a>` defines a hyperlink, which is used to link from one page to another.
+* `<strong>` defines text with strong importance. The content inside is typically displayed in bold. 
+* `<em>` content inside is italicised to add emphasis
+* `<button>` defines a clickable button.
+ 
 ## TAMING HTML & CSS
 ### STYLING DIVS
 1. Styling divs is done with the `style` attribute inline or via classes <br/>
