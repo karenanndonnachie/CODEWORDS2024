@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <title>FOUR CORNERS</title>
+    <style type="text/css">
+        body{ 
+            text:white; 
+            background-color:red;
+            margin:0;
+            padding:0;
+            font-family:Helvetica, Arial, sans-serif;
+            height:100vh;
+            width:100vw;
+        }
+        .largeType{
+            font-size: 10vh;
+            line-height: 1;
+            margin: 0;
+            z-index:0;
+            position:absolute;
+        }
+        .largeType:hover{
+            color:yellow;
+            font-style:italic;
+        }
+        #C {
+            top:0; left:0;
+        }
+        #O {
+            top:0; right:0;
+        }
+        #D {
+            bottom:0; left:0;
+        }
+        #E {
+            bottom:0; right:0;
+        }
+        button{
+            position:absolute;
+            text-align:center;
+            top:calc(50vh - 1em); 
+            font-size: 2em;
+            left:calc(50vw - 2em);
+        }
+    </style>
+</head>
+    <body>
+    <div class="largeType" id="C">C</div>
+    <div class="largeType" id="O">O</div>
+    <div class="largeType" id="D">D</div>
+    <div class="largeType" id="E">E</div>
+    <button>WORDS</button>
+    </body>
+</html>
