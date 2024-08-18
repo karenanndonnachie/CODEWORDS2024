@@ -4,6 +4,7 @@ Melbourne, Australia
 * [Go to Week 1](/WEEK1)
 * [CSS resources](/CSS_TRICKS_TIPS)
 * [Go to Week 2](/WEEK2)
+* [Go to Week 3](/WEEK3)
 _____________________________________
 ## <strong>Github FAQ</strong>
 
