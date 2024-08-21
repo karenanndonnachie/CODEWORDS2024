@@ -4,6 +4,8 @@
 <p>Also please look at all of the other weeks here in github where you can see the code and test the sketches for yourselves. If you want to try anyone's code (ours, or your peers) we suggest you hit 'COMMAND + N' in your processing IDE to open a new sketch then replace the text in the edit window with the cut/pasted code from teh sketch you found. That way you have a p5js folder with the relevant libraries etc.</p>
 <img src="https://github.com/user-attachments/assets/c0f64348-60c7-4876-8d29-46ce31b1964c"/>
 
+<img src="https://github.com/user-attachments/assets/94c933b9-02a5-428e-add6-f2822829acf5" />
+
 <ul>
     <li><a class="inline_disabled" href="https://p5js.org/reference/#/p5/random" target="_blank" rel="noopener">random(): Generate a random variable</a></li>
     <li><a class="inline_disabled" title="Link" href="https://archive.p5js.org/reference/#/p5/arc" target="_blank" rel="noopener">explanation of 'arc'</a></li>
