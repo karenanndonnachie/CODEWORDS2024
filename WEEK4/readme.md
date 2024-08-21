@@ -2,8 +2,8 @@
 <h3>If you missed the class &amp;/or still have not started learning p5js....</h3>
 <p>If you need to get started with creative coding, or want to share/spread the love, these are two good places to start: <a href="https://p5js.org/get-started/" target="_blank" rel="noopener">https://p5js.org/get-started/</a>&nbsp; &amp; Karen ann's <a class="inline_disabled" href="https://vimeo.com/showcase/7191039" target="_blank" rel="noopener">"Minutes of Code" [PW = A2THEK ]&nbsp;</a></p>
 <p>Also please look at all of the other weeks here in github where you can see the code and test the sketches for yourselves. If you want to try anyone's code (ours, or your peers) we suggest you hit 'COMMAND + N' in your processing IDE to open a new sketch then replace the text in the edit window with the cut/pasted code from teh sketch you found. That way you have a p5js folder with the relevant libraries etc.</p>
-<p>![helloworld](https://github.com/user-attachments/assets/036ee991-b261-4464-9971-2c2f63990dd7)
-</p>
+<img src="https://github.com/user-attachments/assets/c0f64348-60c7-4876-8d29-46ce31b1964c"/>
+
 <ul>
     <li><a class="inline_disabled" href="https://p5js.org/reference/#/p5/random" target="_blank" rel="noopener">random(): Generate a random variable</a></li>
     <li><a class="inline_disabled" title="Link" href="https://archive.p5js.org/reference/#/p5/arc" target="_blank" rel="noopener">explanation of 'arc'</a></li>
