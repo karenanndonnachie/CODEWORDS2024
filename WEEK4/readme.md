@@ -1,4 +1,5 @@
 <h2>Hour of Code</h2>
+<a href="https://karenanndonnachie.github.io/CODEWORDS2024/WEEK4/CODEWORDS2024_TEXT/">See this week's sketch in action</a>
 <h3>If you missed the class &amp;/or still have not started learning p5js....</h3>
 <p>If you need to get started with creative coding, or want to share/spread the love, these are two good places to start: <a href="https://p5js.org/get-started/" target="_blank" rel="noopener">https://p5js.org/get-started/</a>&nbsp; &amp; Karen ann's <a class="inline_disabled" href="https://vimeo.com/showcase/7191039" target="_blank" rel="noopener">"Minutes of Code" [PW = A2THEK ]&nbsp;</a></p>
 <p>Also please look at all of the other weeks here in github where you can see the code and test the sketches for yourselves. If you want to try anyone's code (ours, or your peers) we suggest you hit 'COMMAND + N' in your processing IDE to open a new sketch then replace the text in the edit window with the cut/pasted code from teh sketch you found. That way you have a p5js folder with the relevant libraries etc.</p>
