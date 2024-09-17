@@ -23,10 +23,11 @@ There are specific steps needed to get the sound library into a fresh p5.js sket
 
 1. Start a new sketch and 'save as' (eg. codewords_sound) so that you have the correct directory etc. & then under Sketch/Import Library... choose p5.sound
 2. Check that the library has been auto-added to your sketch's library folder.
-3. Add a call to the p5.sound.min.js library in your processing/index.html tab so that your index file looks a bit like this (make sure you actually use your sketch name ):
-   <img width="300" alt="Screenshot 2024-09-17 at 15 51 38" src="https://github.com/user-attachments/assets/4c117053-480c-42d4-8e9f-c85438fca7f6">
-   <img width="300" alt="Screenshot 2024-09-17 at 15 51 38" src="[https://github.com/user-attachments/assets/d8b6dc64-7808-487a-9159-f194bf9eeaa6">
-  <img width="300" alt="Screenshot 2024-09-17 at 15 55 41" src="https://github.com/user-attachments/assets/b076b945-c1d2-41ba-966d-a1acdff6c1d9">
+3. Add a call to the p5.sound.min.js library in your processing/index.html tab so that your index file looks a bit like this (make sure you actually use your sketch name ):<br/>
+  <br/>1. <img width="500" alt="Screenshot 2024-09-17 at 15 51 38" src="https://github.com/user-attachments/assets/4c117053-480c-42d4-8e9f-c85438fca7f6">
+
+<br/>2.<img width="600" alt="Screenshot 2024-09-17 at 15 55 41" src="https://github.com/user-attachments/assets/52bcc0ce-69ad-4778-a627-a42124ffc0e7">
+<br/>3.![Screenshot 2024-09-17 at 13 35 15](https://github.com/user-attachments/assets/879fc350-9955-408b-9411-38b8e03fa18b)
 
 ```
 <!DOCTYPE html>
