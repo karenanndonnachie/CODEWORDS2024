@@ -6,6 +6,8 @@ Melbourne, Australia
 * [Go to Week 2](/WEEK2)
 * [Go to Week 3](/WEEK3)
 * [Go to Week 4](/WEEK4)
+* [Go to Week 3](/WEEK7)
+* [Go to Week 4](/WEEK8)
 _____________________________________
 ## <strong>Github FAQ</strong>
 
