@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive tiled page</title>
+    <style>
+        body {
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin: 20px;
+            background-color: #e0e0e1;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s;
+            width: 200px;
+            text-align: center;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            overflow-y: auto;
+            z-index: 1000;
+        }
+        .modal-content {
+            background-color: #fff;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .modal-content img {
+            max-width: 100%;
+            height: auto;
+        }
+        .modal-text {
+            flex: 1;
+        }
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 2em;
+            color: #fff;
+            cursor: pointer;
+        }
+        h1 {
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive tiled page ~~> Case Studies?</h1>
+    <div class="container" id="content"></div>
+
+    <!-- Modal Structure -->
+    <div class="modal" id="modal">
+        <div class="modal-close" id="modal-close">&times;</div>
+        <div class="modal-content" id="modal-content">
+            <div class="modal-text" id="modal-text"></div>
+            <div class="modal-images" id="modal-images"></div>
+        </div>
+    </div>
+
+    <!-- Include PapaParse library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Path to your CSV file
+            const csvFilePath = 'data.csv';
+
+            // Function to create HTML for each item
+            function createItemHTML(item) {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.dataset.item = JSON.stringify(item);
+
+                const img = document.createElement('img');
+                img.src = item.thumbnail;
+                img.alt = 'Thumbnail';
+
+                const title = document.createElement('div');
+                title.className = 'card-title';
+                title.textContent = item.itemtitle;
+
+                card.appendChild(img);
+                card.appendChild(title);
+
+                // Add click event to open modal
+                card.addEventListener('click', function() {
+                    openModal(item);
+                });
+
+                return card;
+            }
+
+            // Function to display data
+            function displayData(data) {
+                const contentDiv = document.getElementById('content');
+                data.forEach(item => {
+                    const card = createItemHTML(item);
+                    contentDiv.appendChild(card);
+                });
+            }
+
+            // Function to open modal
+            function openModal(item) {
+                const modal = document.getElementById('modal');
+                const modalText = document.getElementById('modal-text');
+                const modalImages = document.getElementById('modal-images');
+
+                modalText.innerHTML = `
+                    <h2>${item.itemtitle}</h2>
+                    <p>${item.bodytext}</p>
+                    <p><strong>Caption:</strong> ${item.caption}</p>
+                    <p><strong>Reference:</strong> ${item.reference}</p>
+                    <p><strong>Link:</strong> <a href="${item.link}" target="_blank">${item.link}</a></p>
+                `;
+
+                modalImages.innerHTML = `
+                    <img src="${item.image}" alt="Image">
+                    <img src="${item.secondimage}" alt="Second Image">
+                `;
+
+                modal.style.display = 'block';
+            }
+
+            // Function to close modal
+            function closeModal() {
+                const modal = document.getElementById('modal');
+                modal.style.display = 'none';
+            }
+
+            // Add event listener to close button
+            document.getElementById('modal-close').addEventListener('click', closeModal);
+
+            // Parse CSV file
+            Papa.parse(csvFilePath, {
+                download: true,
+                header: true,
+                complete: function(results) {
+                    displayData(results.data);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

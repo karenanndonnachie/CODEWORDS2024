@@ -1,0 +1,5 @@
+itemtitle,bodytext,image,thumbnail,secondimage,caption,reference,link
+Title 1,This is the body text for item 1This is the body text for item 1This is the body text for item 1This is the body text for item 1This is the body text for item 1This is the body text for item 1This is the body text for item 1This is the body text for item 1This is the body text for item 1This is the body text for item 1This is the body text for item 1,images/image1.jpg,images/thumbnail.png,images/image3.jpg,"title, author etc",Reference 1,http://example.com/1
+Title 2,This is the body text for item 2,images/image2.jpg,images/thumbnail.png,images/secondimage2.jpg,Caption 2,Reference 2,http://example.com/2
+Title 3,This is the body text for item 3,images/image1.jpg,images/thumbnail.png,images/image3.jpg,Caption 1,Reference 1,http://example.com/1
+Title 4,This is the body text for item 4,images/image2.jpg,images/thumbnail.png,images/secondimage2.jpg,Caption 2,Reference 2,http://example.com/2

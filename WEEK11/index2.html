@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Data Display</title>
+    <style>
+        body {
+            font-family: 'Courier', 'Courier New', Courier, monospace;
+            margin: 20px;
+            background: radial-gradient(circle, red, orange, yellow, green, blue, indigo, violet);            
+            position: relative;
+            overflow: auto;
+            height: 100vh;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #000;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: absolute;
+            transition: transform 0.2s;
+            max-width: 25%;
+            padding: 10px;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 1.5em;
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .card-text {
+            font-size: 1em;
+            margin: 0 0 10px;
+            color: #666;
+        }
+        .card-caption {
+            font-size: 0.9em;
+            margin: 0 0 10px;
+            color: #999;
+        }
+        .card-link {
+            font-size: 0.9em;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .card-link:hover {
+            text-decoration: underline;
+        }
+        .divider {
+            border-top: 1px solid #000;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSV Data Display</h1>
+    <div id="content"></div>
+
+    <!-- Include PapaParse library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Path to your CSV file
+            const csvFilePath = 'data.csv';
+
+            // Function to create HTML for each item
+            function createItemHTML(item) {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.innerHTML = `
+                    <img src="${item.thumbnail}" alt="Thumbnail" class="thumbnail">
+                    <details>
+                        <summary class="card-title">${item.itemtitle}</summary>
+                        <div class="card-content">
+                            <hr class="divider">
+                            <p class="card-text">${item.bodytext}</p>
+                            <hr class="divider">
+                            <img src="${item.image}" alt="Image">
+                            <hr class="divider">
+                            <img src="${item.secondimage}" alt="Second Image">
+                            <hr class="divider">
+                            <p class="card-caption"><strong>Caption:</strong> ${item.caption}</p>
+                            <hr class="divider">
+                            <p class="card-caption"><strong>Reference:</strong> ${item.reference}</p>
+                            <hr class="divider">
+                            <p class="card-caption"><strong>Link:</strong> <a class="card-link" href="${item.link}">${item.link}</a></p>
+                        </div>
+                    </details>
+                `;
+                return card;
+            }
+
+            // Function to display data
+            function displayData(data) {
+                const contentDiv = document.getElementById('content');
+                data.forEach(item => {
+                    const card = createItemHTML(item);
+
+                    // Set random position
+                    card.style.left = `${Math.random() * (window.innerWidth - 300)}px`;
+                    card.style.top = `${Math.random() * (window.innerHeight - 300)}px`;
+
+                    // Make the card draggable using the thumbnail
+                    const thumbnail = card.querySelector('.thumbnail');
+                    makeDraggable(card, thumbnail);
+
+                    contentDiv.appendChild(card);
+                });
+            }
+
+            // Function to make an element draggable using a handle
+            function makeDraggable(element, handle) {
+                let offsetX, offsetY;
+
+                handle.addEventListener('mousedown', function(e) {
+                    e.preventDefault(); // Prevent default behavior to avoid image selection
+                    offsetX = e.clientX - parseInt(window.getComputedStyle(element).left);
+                    offsetY = e.clientY - parseInt(window.getComputedStyle(element).top);
+                    document.addEventListener('mousemove', mouseMoveHandler);
+                    document.addEventListener('mouseup', mouseUpHandler);
+                });
+
+                function mouseMoveHandler(e) {
+                    element.style.left = `${e.clientX - offsetX}px`;
+                    element.style.top = `${e.clientY - offsetY}px`;
+                }
+
+                function mouseUpHandler() {
+                    document.removeEventListener('mousemove', mouseMoveHandler);
+                    document.removeEventListener('mouseup', mouseUpHandler);
+                }
+            }
+
+            // Parse CSV file
+            Papa.parse(csvFilePath, {
+                download: true,
+                header: true,
+                complete: function(results) {
+                    displayData(results.data);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
