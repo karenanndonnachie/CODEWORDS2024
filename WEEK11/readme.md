@@ -8,6 +8,8 @@ Feel free to grab the file from here, edit (either in excel or in a textedit) an
 * index.html ~~> this has some inline javascript for the csv reading & element composition, and some inline css styles for the flexbox etc. There is also a script link to 'papaparse' which is a javascript library that is excellent for reading data files.
 Feel free to tinker with the what and how the pages are made.
 
+<img width="1182" alt="Screenshot 2024-10-08 at 10 29 02 PM" src="https://github.com/user-attachments/assets/3786557c-2789-4363-a9d3-448e0dd22aa6">
+
 if you change the link in your url to index2.html while you are viewing the "Responsive Tiled Page" page, you can see an alternate version with draggable elements. You can see the html <a href="index2.html">here</a>.
 
   
