@@ -5,5 +5,9 @@
 ELEMENTS YOU WILL NEED: 
 * data.csv ~~> this is a spreadsheet saved as a .csv file. Each Row is a new card/thumbnail/item and each column is an 'attribute' or field. Javascript will read the file and compose the page accordingly.
 Feel free to grab the file from here, edit (either in excel or in a textedit) and save.
-* index.html ~~> this has some inline javascript for the csv reading & element composition, and some inline css styles for the flexbox etc. Feel free to tinker with the what and how the pages are amde.
-* 
+* index.html ~~> this has some inline javascript for the csv reading & element composition, and some inline css styles for the flexbox etc. There is also a script link to 'papaparse' which is a javascript library that is excellent for reading data files.
+Feel free to tinker with the what and how the pages are made.
+
+if you change the link in your url to index2.html while you are viewing the "Responsive Tiled Page" page, you can see an alternate version with draggable elements. You can see the html <a href="index2.html">here</a>.
+
+  
